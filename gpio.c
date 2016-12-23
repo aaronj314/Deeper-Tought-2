@@ -94,7 +94,7 @@ void *blink(int *terminate)
 	// Find gpio address (different for Pi 2) ----------
 	gpio.addr_p = bcm_host_get_peripheral_address() +  + 0x200000;
 	if (gpio.addr_p== 0x20200000) printf("RPi Plus detected\n");
-	else printf("RPi 2 detected\n");
+	else printf("RPi 2 or 3 detected\n");
 
 	// set thread to real time priority -----------------
 	struct sched_param sp;
